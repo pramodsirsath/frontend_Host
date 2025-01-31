@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* *{
+    background-color: #111827;
+} */
+
+.logo{
+    color: #d8b4fe;
+}
+
+/* Default dropdown styles */
+.dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dropdown positioning fix */
+.dropdown-menu {
+    z-index: 10;
+}
+
+/* Consistent button transitions */
+.navbar button {
+    transition: all 0.2s ease;
+}
+/* Styles for Navbar Dropdown */
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.dropdown-menu {
+display: none;
+transition: opacity 0.3s ease;
+}

@@ -1,0 +1,33 @@
+/* General dark mode styles */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Navbar dark mode styles */
+.navbar.dark {
+  background-color: #1f2937;
+}
+
+/* Additional dark mode styles for other components */
+.home-container.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.footer.dark {
+  background-color: #1f2937;
+  color: #e0e0e0;
+}
+
+/* Example for other elements */
+button.dark {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+a.dark {
+  color: #60a5fa;
+}
+
+/* Add more dark mode styles as needed */
