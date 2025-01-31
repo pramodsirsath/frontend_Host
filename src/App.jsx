@@ -12,7 +12,7 @@ import MessBill from "./components/MessBill/MessBill";
 import MessFeedback from "./components/Feedback/MessFeedback";
 import HostelFeedback from "./components/Feedback/HostelFeedback";
 import MessSchedule from "./components/MessSchedule/messschedule";
-import Complaint from "./components/Complaint/complaint";
+import Complaint from "./components/Complaint/Complaint";
 import Event from "./components/Event/event";
 import MessOff from "./components/MessOff/messoff";
 import { ContextProvider } from "./components/Context";
