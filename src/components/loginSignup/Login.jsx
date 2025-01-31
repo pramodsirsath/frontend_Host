@@ -25,7 +25,7 @@ function Login() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/auth/login', data);
+      const response = await axios.post('https://backend-eight-liart.vercel.app/api/v1/auth/login', data);
 
       if (response.status === 200) {
         alert(response.data.message);

@@ -23,7 +23,7 @@ function Signup() {
       password 
     }
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/auth/signup', data);
+      const response = await axios.post('https://backend-eight-liart.vercel.app/api/v1/auth/signup', data);
 
       if (response.status === 200) {
         alert(response.data.message);
