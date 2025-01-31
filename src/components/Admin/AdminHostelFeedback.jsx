@@ -10,7 +10,7 @@ function AdminHostelFeedback() {
   const fetchFeedbackData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/v1/admin/hostelfeedback"
+        "https://backend-eight-liart.vercel.app/api/v1/admin/hostelfeedback"
       );
       console.log(response.data); // Ensure correct API response format
       setFeedbackData(response.data.hostelfeedback || []); // Ensure it's an array

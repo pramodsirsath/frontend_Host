@@ -37,7 +37,7 @@ function ComplaintForm(r) {
     console.log(complaintData)
 
     try {
-      const response = await axios.post("http://localhost:5000/api/v1/hostel/complaint", complaintData);
+      const response = await axios.post("https://backend-eight-liart.vercel.app/api/v1/hostel/complaint", complaintData);
       if (response.status === 200) {
         alert("Complaint submitted successfully!");
         setComplaintDetails("");

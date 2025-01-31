@@ -10,7 +10,7 @@ function AdminMessFeedback() {
   const fetchFeedbackData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/v1/admin/messfeedback"
+        "https://backend-eight-liart.vercel.app/api/v1/admin/messfeedback"
       );
       console.log(response.data); // Ensure correct API response format
       setFeedbackData(response.data.messfeedback || []); // Ensure it's an array

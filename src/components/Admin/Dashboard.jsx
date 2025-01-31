@@ -19,7 +19,7 @@ function Dashboard() {
   // Fetch total complaints
   const fetchComplaints = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/v1/admin/Complaint");
+      const response = await axios.get("https://backend-eight-liart.vercel.app/api/v1/admin/Complaint");
       setComplaints(response.data.Complaint);
     } catch (error) {
       console.error("Error fetching complaints:", error);

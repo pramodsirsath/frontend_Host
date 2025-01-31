@@ -25,7 +25,7 @@ export default function MessOffForm() {
     console.log("Form submitted:", formData);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/v1/hostel/messoff",
+        "https://backend-eight-liart.vercel.app/api/v1/hostel/messoff",
         formData
       );
       console.log(response)

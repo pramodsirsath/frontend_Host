@@ -5,7 +5,7 @@ function MessOff() {
     const fetchData = async () => {
     try{
     const response = await axios.get(
-        "http://localhost:5000/api/v1/admin/messoff"
+        "https://backend-eight-liart.vercel.app/api/v1/admin/messoff"
       );
       console.log(response)
       setData(response.data.messoff)

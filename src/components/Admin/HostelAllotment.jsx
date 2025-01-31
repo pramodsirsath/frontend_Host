@@ -7,7 +7,7 @@ function HostelAllotment() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/v1/admin/HostelAllotment"
+        "https://backend-eight-liart.vercel.app/api/v1/admin/HostelAllotment"
       );
       console.log(response);
       setData(response.data.HostelAllotment);
@@ -29,7 +29,7 @@ function HostelAllotment() {
 
     try {
         const response = await axios.post(
-          `http://localhost:5000/api/v1/admin/toggle-allotment/${id}`
+          `https://backend-eight-liart.vercel.app/api/v1/admin/toggle-allotment/${id}`
         );
         console.log(response);
         // setData(response.data.HostelAllotment);
