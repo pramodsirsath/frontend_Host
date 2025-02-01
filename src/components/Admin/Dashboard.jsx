@@ -29,7 +29,7 @@ function Dashboard() {
   // Fetch hostel feedback
   const fetchHostelFeedback = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/v1/admin/hostelfeedback");
+      const response = await axios.get("https://backend-eight-liart.vercel.app/api/v1/admin/hostelfeedback");
       setHostelFeedback(response.data.hostelfeedback);
     } catch (error) {
       console.error("Error fetching hostel feedback:", error);
@@ -39,7 +39,7 @@ function Dashboard() {
   // Fetch mess feedback
   const fetchMessFeedback = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/v1/admin/messfeedback");
+      const response = await axios.get("https://backend-eight-liart.vercel.app/api/v1/admin/messfeedback");
       setMessFeedback(response.data.messfeedback);
     } catch (error) {
       console.error("Error fetching mess feedback:", error);
@@ -50,7 +50,7 @@ function Dashboard() {
   const fetchData=async()=>{
     try{
       const response = await axios.get(
-        "http://localhost:5000/api/v1/admin/getTotalCount"
+        "https://backend-eight-liart.vercel.app/api/v1/admin/getTotalCount"
       );
       console.log(response)
       setData(response.data)
