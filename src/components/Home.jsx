@@ -6,6 +6,8 @@ import hostelImg from "../assets/hostelimg.jpg";
 import djnight from "../assets/djnight.jpg";
 import holi from "../assets/holi.jpg";
 import cricket from "../assets/cricket.jpg";
+import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -97,7 +99,7 @@ function Home() {
               Experience comfort, convenience, and collaboration at your hostel.
               <br /> Stay connected, stay inspired, and make every day count.
             </motion.p>
-            <motion.a
+{/*             <motion.a
               href="#gallery"
               className="mt-8 inline-block px-8 py-4 bg-[#2f5583] text-white text-sm font-semibold uppercase rounded-lg shadow-md transition-all duration-300 hover:bg-blue-700 hover:shadow-lg transform hover:scale-105"
               initial={{ scale: 0.9, opacity: 0 }}
@@ -105,7 +107,19 @@ function Home() {
               transition={{ delay: 1.5 }}
             >
               Explore Gallery
-            </motion.a>
+            </motion.a> */}
+             <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 1.5 }}
+            >
+              <Link
+                to='/event'
+                className="mt-8 inline-block px-8 py-4 bg-[#2f5583] text-white text-sm font-semibold uppercase rounded-lg shadow-md transition-all duration-300 hover:bg-blue-700 hover:shadow-lg transform hover:scale-105"
+              >
+                Explore Gallery
+              </Link>
+            </motion.div>
           </div>
 
           {/* Right Section */}
@@ -241,6 +255,7 @@ function Home() {
       {/* Footer */}
       <footer className={`bg-[#1f2937] py-6 text-center text-[#d1d5db] ${isDarkMode ? 'dark' : ''}`}>
       </footer>
+      <Footer />
     </div>
   );
 }
