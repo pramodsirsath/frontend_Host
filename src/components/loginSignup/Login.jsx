@@ -47,7 +47,9 @@ function Login() {
   };
 
   return (
-    <div className="-gbgray-900 min-h-screen flex items-center justify-center">
+    // <div className="-gbgray-900 min-h-screen flex items-center justify-center">
+        <div className="bg-gradient-to-br bg-gray-900 min-h-screen flex items-center pt-28 justify-center px-12 py-10">
+
       <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
         <h1 className="text-3xl font-bold text-center text-slate-400 mb-6">
           Login
